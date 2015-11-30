@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>{{page.title}}</title>
+		<meta charset="utf-8">
+		<link rel="stylesheet" href="http://sebasdeldi.github.io/Jekyll-Blog2/css/bootstrap.min.css">
+		<link rel="stylesheet" href="http://sebasdeldi.github.io/Jekyll-Blog2/css/custom_posts.css">
+		<link href='https://fonts.googleapis.com/css?family=Roboto+Condensed:400,700' rel='stylesheet' type='text/css'>
+		<link href='https://fonts.googleapis.com/css?family=Calligraffitti' rel='stylesheet' type='text/css'>
+		
+	</head>
+	<body>
+
+		<header>
+			{% include nav.html %}
+		</header>
+		<div class="container">
+
+			<div id="contenido">
+				<h1>{{ page.title }}</h1>
+				{{content}}
+			</div>
+		</div>
+		<script type="text/javascript" src="http://sebasdeldi.github.io/Jekyll-Blog2/js/jquery-2.1.4.min.js"></script>
+		<script type="text/javascript" src="http://sebasdeldi.github.io/Jekyll-Blog2/js/bootstrap.min.js"></script>
+
+		<footer>
+			{% include footer.html %}
+		</footer>
+		
+	</body>
+</html>
